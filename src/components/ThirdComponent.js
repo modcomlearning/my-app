@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
 
-const MyComponent2 = (props) => {
+import {useState}  from 'react'
+
+const ThirdComponent = () => {
+
   // Initialize the number state to 10
   const [number, setNumber] = useState(10);
 
@@ -14,10 +16,8 @@ const MyComponent2 = (props) => {
       <h1>Current Number: {number}</h1> {/* Display the current number */}
       <button onClick={updateNumber}>Increase Number</button> 
       {/* Button to increase number */}
-
-      <h1>{props.passedMessage}</h1>
     </div>
   );
 };
 
-export default MyComponent2;
+export default ThirdComponent;

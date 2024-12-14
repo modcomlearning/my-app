@@ -1,35 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-import MyComponent1 from './components/MyComponent1';
-import MyComponent2 from './components/MyComponent2';
-import MyComponent3 from './components/MyComponent3';
-//Router Imports
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
+import './App.css';
+import FifthComponent from './components/FifthComponent';
+import FirstComponent from './components/FirstComponent';
+import FourthComponent from './components/FourthComponent';
+import SecondComponent from './components/SecondComponent';
+import ThirdComponent from './components/ThirdComponent';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 // App Component
 function App() {
   return (
-    <Router>
-    <div className="App">
-        <header className="App-header">
-          <h1>Welcome to React!</h1>
-            <p>Very Nice, Great App   </p>
-        </header>
+   <Router>
+      <div className="App">
+          <header className="App-header">
+            <h1 className='heading'>Welcome to React!</h1>
+              <p>Very Nice, Great App   </p>
+          </header>
 
-        <nav>
-          <ul>
-            <li><Link to="/component1">Go to MyComponent1</Link></li>
-            <li><Link to="/component2">Go to MyComponent2</Link></li>
-            <li><Link to="/component3">Go to MyComponent3</Link></li>
-          </ul>
-        </nav>
-
+           {/* Create a user Naviagtion */}
+          <nav>
+              <Link to="/first" className='navlinks'>Go to First Component </Link> 
+              <Link to="/second" className='navlinks'>Go to SecondComponent </Link> 
+              <Link to="/third" className='navlinks'>Go to ThirdComponent </Link> 
+            
+          </nav>
+          {/* Below we create routes that will link to specific Components */}
           <Routes>
-            <Route path="/component1" element={<MyComponent1 />} />
-            <Route path="/component2" element={<MyComponent2 />} />
-            <Route path="/component3" element={<MyComponent3 passedMessage = {"Hello Props"}/>} />
+            <Route path="/first" element={<FirstComponent />} />
+            <Route path="/second" element={<SecondComponent />} />
+            <Route path="/third" element={<ThirdComponent />} />
+            <Route path="/fourth" element={<FourthComponent/>} />
+            <Route path="/fifth" element={<FifthComponent passedMessage = "Hello There"/>} />
           </Routes>
-        </div>
+      </div>
     </Router>
   );
 }
