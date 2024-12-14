@@ -21,7 +21,8 @@ function App() {
               <Link to="/first" className='navlinks'>Go to First Component </Link> 
               <Link to="/second" className='navlinks'>Go to SecondComponent </Link> 
               <Link to="/third" className='navlinks'>Go to ThirdComponent </Link> 
-            
+              <Link to="/fourth" className='navlinks'>Go to Fourth Component </Link> 
+              <Link to="/fifth" className='navlinks'>Go to Fourth Component </Link> 
           </nav>
           {/* Below we create routes that will link to specific Components */}
           <Routes>
