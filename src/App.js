@@ -30,7 +30,7 @@ function App() {
             <Route path="/second" element={<SecondComponent />} />
             <Route path="/third" element={<ThirdComponent />} />
             <Route path="/fourth" element={<FourthComponent/>} />
-            <Route path="/fifth" element={<FifthComponent passedMessage = "Hello There"/>} />
+            <Route path="/fifth" element={<FifthComponent/>} />
           </Routes>
       </div>
     </Router>
