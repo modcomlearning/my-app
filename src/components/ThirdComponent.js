@@ -8,14 +8,17 @@ const ThirdComponent = () => {
 
   // // Function to update the number when the button is clicked
   const updateNumber = () => {
-    setNumber(number + 1);  // Increase the number by 1
+    setNumber(20);  // Set A new Number
   };
 
   return (
     <div>
-      <h1>Current Number: {number}</h1> {/* Display the current number */}
-      <button onClick={updateNumber}>Increase Number</button> 
-      {/* Button to increase number */}
+      {/* Display the current number */}
+      <h1>Current Number: {number}</h1> 
+
+       {/* Button to update number */}
+      <button onClick={updateNumber}>Update Number</button> 
+     
     </div>
   );
 };
