@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1409aa;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@
 
 /* Style heading class */
 .heading {
-  background-color: coral;
+  background-color: rgb(170, 13, 60);
   font-family: 'Courier New', Courier, monospace;
 }
 
